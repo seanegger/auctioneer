@@ -248,7 +248,7 @@ Strategy
 --
 +void updateHighestBid(float:newHighestBid)
 +void bid()
-+void bidCustom(Autioneer, highestBid)
++void bidCustom(float: amount)
 
 
 </panel_attributes>
@@ -283,7 +283,6 @@ Strategy
 --
 +void updateHighestBid(float:newHighestBid)
 +void bid()
-+void bid(Auctioneer, highestBid)
 
 
 </panel_attributes>
