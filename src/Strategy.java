@@ -1,3 +1,3 @@
 public interface Strategy{
-	void bid(Auctioneer auctioneer, double highestBid);
+	void notifyAuctioneerOfBid(Auctioneer auctioneer, double highestBid,Bidder bidder);
 }
