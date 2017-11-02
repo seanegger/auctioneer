@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1431</x>
-      <y>351</y>
+      <x>1845</x>
+      <y>306</y>
       <w>189</w>
       <h>63</h>
     </coordinates>
@@ -18,8 +18,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>693</x>
-      <y>297</y>
+      <x>1107</x>
+      <y>252</y>
       <w>270</w>
       <h>144</h>
     </coordinates>
@@ -41,8 +41,8 @@ Bidder
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>954</x>
-      <y>306</y>
+      <x>1368</x>
+      <y>261</y>
       <w>144</w>
       <h>36</h>
     </coordinates>
@@ -53,8 +53,8 @@ Bidder
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1080</x>
-      <y>297</y>
+      <x>1494</x>
+      <y>252</y>
       <w>297</w>
       <h>198</h>
     </coordinates>
@@ -77,8 +77,8 @@ Bidder
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1368</x>
-      <y>342</y>
+      <x>1782</x>
+      <y>297</y>
       <w>81</w>
       <h>36</h>
     </coordinates>
@@ -89,8 +89,8 @@ Bidder
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>954</x>
-      <y>324</y>
+      <x>1368</x>
+      <y>279</y>
       <w>144</w>
       <h>36</h>
     </coordinates>
@@ -101,15 +101,15 @@ Bidder
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>288</x>
-      <y>297</y>
-      <w>324</w>
+      <x>522</x>
+      <y>252</y>
+      <w>495</w>
       <h>117</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Interface&gt;&gt;
 Strategy
 --
-+void notifyAuctioneerOfBid(Auctioneer, highestBid)
++void notifyAuctioneerOfBid(Auctioneer: auctioneer, float: highestBid, Bidder: bidder)
 
 </panel_attributes>
     <additional_attributes/>
@@ -117,30 +117,30 @@ Strategy
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>99</x>
-      <y>801</y>
-      <w>198</w>
+      <x>27</x>
+      <y>396</y>
+      <w>495</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>Bid10Over
 
 --
-+void bid(Auctioneer, highestBid)
++void notifyAuctioneerOfBid(Auctioneer: auctioneer, float: highestBid, Bidder: bidder)
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>306</x>
-      <y>801</y>
-      <w>198</w>
+      <x>27</x>
+      <y>504</y>
+      <w>495</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>Bid10OverUnder100
 
 --
-+void bid(Auctioneer, highestBid
++void notifyAuctioneerOfBid(Auctioneer: auctioneer, float: highestBid, Bidder: bidder)
 
 </panel_attributes>
     <additional_attributes/>
@@ -148,15 +148,15 @@ Strategy
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>531</x>
-      <y>801</y>
-      <w>198</w>
+      <x>27</x>
+      <y>612</y>
+      <w>495</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>Bid10OverAfter10Offers
 
 --
-+void bid(Auctioneer, highestBid)
++void notifyAuctioneerOfBid(Auctioneer: auctioneer, float: highestBid, Bidder: bidder)
 
 </panel_attributes>
     <additional_attributes/>
@@ -164,15 +164,15 @@ Strategy
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>738</x>
-      <y>801</y>
-      <w>198</w>
+      <x>27</x>
+      <y>720</y>
+      <w>495</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>Bid10Over
 
 --
-+void bid(Auctioneer, highestBid)
++void notifyAuctioneerOfBid(Auctioneer: auctioneer, float: highestBid, Bidder: bidder)
 
 </panel_attributes>
     <additional_attributes/>
@@ -180,70 +180,20 @@ Strategy
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>729</y>
-      <w>252</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=.
-&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
-    <additional_attributes>260.0;20.0;10.0;20.0;10.0;80.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>351</x>
-      <y>405</y>
-      <w>99</w>
-      <h>414</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.
-
-
-&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;440.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>414</x>
-      <y>729</y>
-      <w>234</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=.
-&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;240.0;20.0;240.0;80.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>621</x>
-      <y>729</y>
-      <w>234</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=.
-&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;240.0;20.0;240.0;80.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>603</x>
-      <y>351</y>
-      <w>108</w>
+      <x>1008</x>
+      <y>306</y>
+      <w>117</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 1</panel_attributes>
-    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>954</x>
-      <y>342</y>
+      <x>1368</x>
+      <y>297</y>
       <w>144</w>
       <h>36</h>
     </coordinates>
@@ -254,36 +204,24 @@ Strategy
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>963</x>
-      <y>801</y>
-      <w>198</w>
+      <x>27</x>
+      <y>828</y>
+      <w>495</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>BidNOver
 
 --
-+void bid(Auctioneer, highestBid)
++void notifyAuctioneerOfBid(Auctioneer: auctioneer, float: highestBid, Bidder: bidder)
 
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>828</x>
-      <y>729</y>
-      <w>252</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=.
-&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;260.0;20.0;260.0;80.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>702</x>
-      <y>108</y>
+      <x>1116</x>
+      <y>63</y>
       <w>189</w>
       <h>63</h>
     </coordinates>
@@ -295,8 +233,8 @@ Strategy
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>549</x>
-      <y>513</y>
+      <x>963</x>
+      <y>468</y>
       <w>234</w>
       <h>144</h>
     </coordinates>
@@ -307,8 +245,8 @@ Strategy
 -Auctioneer auctioneer
 -Strategy strategy
 --
-+void update(float)
-+void bid(Auctioneer, highestBid)
++void updateHighestBid(float:newHighestBid)
++void bid()
 +void bidCustom(Autioneer, highestBid)
 
 
@@ -318,8 +256,8 @@ Strategy
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>684</x>
-      <y>432</y>
+      <x>1098</x>
+      <y>387</y>
       <w>135</w>
       <h>99</h>
     </coordinates>
@@ -330,8 +268,8 @@ Strategy
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>846</x>
-      <y>513</y>
+      <x>1260</x>
+      <y>468</y>
       <w>207</w>
       <h>144</h>
     </coordinates>
@@ -342,7 +280,8 @@ Strategy
 -Auctioneer auctioneer
 -Strategy strategy
 --
-+void update(float)
++void updateHighestBid(float:newHighestBid)
++void bid()
 +void bid(Auctioneer, highestBid)
 
 
@@ -352,13 +291,84 @@ Strategy
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
-      <y>459</y>
+      <x>1206</x>
+      <y>414</y>
       <w>153</w>
       <h>72</h>
     </coordinates>
     <panel_attributes>lt=.
 &lt;&lt;instanceOf&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;20.0;150.0;20.0;150.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>783</x>
+      <y>360</y>
+      <w>27</w>
+      <h>531</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;570.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>513</x>
+      <y>432</y>
+      <w>297</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
+    <additional_attributes>310.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>513</x>
+      <y>540</y>
+      <w>297</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
+    <additional_attributes>310.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>513</x>
+      <y>648</y>
+      <w>297</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
+    <additional_attributes>310.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>513</x>
+      <y>756</y>
+      <w>297</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
+    <additional_attributes>310.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>513</x>
+      <y>855</y>
+      <w>297</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
+    <additional_attributes>310.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>
