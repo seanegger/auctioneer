@@ -1,11 +1,12 @@
 import auctioneer.Auctioneer;
 import auctioneer.Bidder;
 
-public abstract class Bid10Over implements Strategy {
+public class Bid10OverAfter10Offers implements Strategy{
 	@Override
 	public void notifyAuctioneerOfBid(Auctioneer auctioneer, double highestBid,Bidder bidder)
 	{
-		auctioneer.takeBid(highestBid+10.0, bidder );
+		if(auctioneer.getNumBid() >=10)
+			auctioneer.takeBid(highestBid+10.0, bidder );
 	}
-
 }
+		
