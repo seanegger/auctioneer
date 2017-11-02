@@ -2,24 +2,30 @@ package auctioneer;
 
 public class HumanBidder implements Bidder{
 
-    private string name;
+    private String name;
     float currentHighestBidder;
     Auctioneer auctioneer;
     Strategy strategy;
 
-    void updateHighestBidder(float newHighestBidder)
+    public void updateHighestBidder(float newHighestBidder)
     {
         currentHighestBidder = newHighestBidder;
     }
 
-    void bid()
+    public void bid()
     {
-        strategy.bid(auctioneer, this);
+        strategy.notifyAuctioneerOfBid(auctioneer,auctioneer.getHighestBid(), this);
     }
 
     void bidCustom(float amount)
     {
-        auctioneer.takeBid(amount, this)
+        auctioneer.takeBid(amount, this);
     }
+
+	@Override
+	public void update(float newHighestBid) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

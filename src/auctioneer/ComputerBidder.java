@@ -1,18 +1,24 @@
 package auctioneer;
 
 public class ComputerBidder implements Bidder{
-    private string name;
+    private String name;
     float currentHighestBidder;
     Auctioneer auctioneer;
     Strategy strategy;
 
-    void updateHighestBidder(float newHighestBidder)
+    public void updateHighestBidder(float newHighestBidder)
     {
         currentHighestBidder = newHighestBidder;
     }
 
-    void bid()
+    public void bid()
     {
-        strategy.bid(auctioneer, this);
+        strategy.notifyAuctioneerOfBid(auctioneer,auctioneer.getHighestBid(), this);
     }
+
+	@Override
+	public void update(float newHighestBid) {
+		// TODO Auto-generated method stub
+		
+	}
 }

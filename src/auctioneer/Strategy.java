@@ -1,7 +1,6 @@
-import auctioneer.Auctioneer;
-import auctioneer.Bidder;
+package auctioneer;
 
 public interface Strategy{
 
-	void notifyAuctioneerOfBid(Auctioneer auctioneer, double highestBid, Bidder bidder);
+	void notifyAuctioneerOfBid(Auctioneer auctioneer, float highestBid, Bidder bidder);
 }

@@ -1,15 +1,22 @@
 package auctioneer;
 
+import java.util.ArrayList;
+
 public class Auctioneer {
 
 
 
 	private Bidder highestBidder;
 	private ArrayList<Bidder> bidders;
-	private IemForBid item;
+	private ItemForBid item;
 	private float highestBid;
 	private boolean auctionGoing;
+	int numOfBids = 0;
 
+	public int getNumOfBids()
+	{
+		return this.numOfBids;
+	}
 	public Bidder getHighestBidder() {
 		return highestBidder;
 	}
@@ -26,11 +33,11 @@ public class Auctioneer {
 		this.bidders = bidders;
 	}
 
-	public IemForBid getItem() {
+	public ItemForBid getItem() {
 		return item;
 	}
 
-	public void setItem(IemForBid item) {
+	public void setItem(ItemForBid item) {
 		this.item = item;
 	}
 
@@ -44,7 +51,7 @@ public class Auctioneer {
 
 	public void addBidder(Bidder bidder)
 	{
-		bidder.add(bidder);
+		bidders.add(bidder);
 	}
 
 	public void updateAuctionRunning(boolean isRunning)
@@ -65,6 +72,7 @@ public class Auctioneer {
 		{
 			highestBid = amount;
 			highestBidder = bidder;
+			this.numOfBids++;
 		}
 	}
 
