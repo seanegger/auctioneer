@@ -42,6 +42,11 @@ public class Auctioneer {
 		this.highestBid = highestBid;
 	}
 
+	public void addBidder(Bidder bidder)
+	{
+		bidder.add(bidder);
+	}
+
 	public void updateAuctionRunning(boolean isRunning)
 	{
 		auctionGoing = isRunning;
@@ -49,12 +54,18 @@ public class Auctioneer {
 
 	private void notifyBidders()
 	{
-
+		for (Bidder bidder : bidders) {
+			bidder.updateHighestBidder(highestBid);
+		}
 	}
 
-	public void takeBid()
+	public void takeBid(float amount, Bidder bidder)
 	{
-
+		if (amount > highestBid)
+		{
+			highestBid = amount;
+			highestBidder = bidder;
+		}
 	}
 
 	public void display()
